@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Take Home</string>
+    <string name="username_input_hint">Enter username</string>
+    <string name="search_button_label">Search</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="stars">Stars</string>
+    <string name="forks">Forks</string>
+</resources>

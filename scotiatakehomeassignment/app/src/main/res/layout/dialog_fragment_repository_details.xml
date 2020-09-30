@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_spacing">
+
+    <TextView
+        android:id="@+id/tv_last_updated_label"
+        style="@style/Body.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_updated"
+        app:layout_constraintEnd_toStartOf="@id/tv_last_updated"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_stars_label"
+        style="@style/Body.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_spacing"
+        android:text="@string/stars"
+        app:layout_constraintEnd_toStartOf="@id/tv_stars"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_last_updated_label" />
+
+    <TextView
+        android:id="@+id/tv_forks_label"
+        style="@style/Body.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_spacing"
+        android:text="@string/forks"
+        app:layout_constraintEnd_toStartOf="@id/tv_forks"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_stars_label" />
+
+    <TextView
+        android:id="@+id/tv_last_updated"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_last_updated_label"
+        app:layout_constraintTop_toTopOf="@id/tv_last_updated_label"
+        tools:text="Oct 24, 2020" />
+
+    <TextView
+        android:id="@+id/tv_stars"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_stars_label"
+        app:layout_constraintTop_toTopOf="@id/tv_stars_label"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/tv_forks"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_forks_label"
+        app:layout_constraintTop_toTopOf="@id/tv_forks_label"
+        tools:text="5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
